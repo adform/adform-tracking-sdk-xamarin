@@ -1,5 +1,0 @@
-/Users/vladas/Projects/Adform/AdformTrackingBinding/AdformTrackingBinding/obj/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/vladas/Projects/Adform/AdformTrackingBinding/AdformTrackingBinding/bin/Debug/AdformTrackingBinding.dll.mdb
-/Users/vladas/Projects/Adform/AdformTrackingBinding/AdformTrackingBinding/bin/Debug/AdformTrackingBinding.dll
-/Users/vladas/Projects/Adform/AdformTrackingBinding/AdformTrackingBinding/obj/Debug/AdformTrackingBinding.dll
-/Users/vladas/Projects/Adform/AdformTrackingBinding/AdformTrackingBinding/obj/Debug/AdformTrackingBinding.dll.mdb
