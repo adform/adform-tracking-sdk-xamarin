@@ -1,15 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="test/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdformTrackingBindingIOS/ApiDefinition.cs">
     <Files>
-      <File FileName="test/AppDelegate.cs" Line="90" Column="4" />
-      <File FileName="test/ViewController.cs" Line="17" Column="4" />
       <File FileName="AdformTrackingBindingIOS/ApiDefinition.cs" Line="62" Column="8" />
       <File FileName="../../../../../../Library/Frameworks/Mono.framework/Versions/4.4.2/lib/mono/4.5/Microsoft.Common.targets" Line="53" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/test/AppDelegate.cs" line="2" column="1" />
+    <BreakpointStore>
+      <Breakpoint file="/Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/test/AppDelegate.cs" line="2" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

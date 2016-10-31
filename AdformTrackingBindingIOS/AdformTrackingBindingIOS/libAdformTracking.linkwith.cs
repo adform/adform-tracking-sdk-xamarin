@@ -7,4 +7,4 @@
 
 using ObjCRuntime;
 
-[assembly: LinkWith ("libAdformTracking.a", SmartLink = true, ForceLoad = true)]
+[assembly: LinkWith ("libAdformTracking.a", SmartLink = true, Frameworks = "SystemConfiguration AdSupport CoreData CoreTelephony SafariServices", ForceLoad = true)]
