@@ -106,7 +106,7 @@ namespace AdformTrackingBindingiOS
 		// - (AFOrder *)order;
 		// - (void)setOrder:(AFOrder *)order;
 		[Export("order")]
-		AFOrder[] Order { get; set; }
+		AFOrder Order { get; set; }
 	}
 
 	// @interface AFTrackPointsBuilder : NSObject
