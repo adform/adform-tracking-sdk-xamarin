@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="AdformTrackingBindingIOS/ApiDefinition.cs">
     <Files>
-      <File FileName="AdformTrackingBindingIOS/ApiDefinition.cs" Line="62" Column="8" />
+      <File FileName="AdformTrackingBindingIOS/ApiDefinition.cs" Line="276" Column="32" />
       <File FileName="../../../../../../Library/Frameworks/Mono.framework/Versions/4.4.2/lib/mono/4.5/Microsoft.Common.targets" Line="53" Column="6" />
+      <File FileName="AdformTrackingBindingIOS/libAdformTracking.linkwith.cs" Line="10" Column="86" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

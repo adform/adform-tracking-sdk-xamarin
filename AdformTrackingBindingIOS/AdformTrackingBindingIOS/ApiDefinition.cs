@@ -20,6 +20,10 @@ namespace AdformTrackingBindingiOS
 		[Export("HTTPSEnabled")]
 		bool HTTPSEnabled { [Bind("isHTTPSEnabled")] get; }
 
+		// @property (nonatomic, assign, readonly, getter=isSafariControllerEnabled) BOOL safariControllerEnabled;
+		[Export("safariControllerEnabled")]
+		bool SafariControllerEnabled { [Bind("isSafariControllerEnabled")] get; }
+
 		// +(AdformTrackingSDK *)sharedInstance;
 		[Static]
 		[Export("sharedInstance")]
@@ -32,6 +36,10 @@ namespace AdformTrackingBindingiOS
 		// -(void)setSendSimCardStateEnabled:(BOOL)enabled;
 		[Export("setSendSimCardStateEnabled:")]
 		void SetSendSimCardStateEnabled(bool enabled);
+
+		// - (void)setSafariControllerEnabled:(BOOL)enabled;
+		[Export("setSafariControllerEnabled:")]
+		void SetSafariControllerEnabled(bool enabled);
 
 		// -(void)startTracking:(long)trackingPointId;
 		[Export("startTracking:")]
