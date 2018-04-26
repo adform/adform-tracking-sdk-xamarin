@@ -1,0 +1,3 @@
+/Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/bin/Release/AdformTrackingBindingIOS.dll
+/Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/obj/Release/AdformTrackingBindingIOS.csproj.CoreCompileInputs.cache
+/Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/obj/Release/AdformTrackingBindingIOS.dll

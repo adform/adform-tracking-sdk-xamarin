@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdformTrackingBindingIOS/ApiDefinition.cs">
+    <Files>
+      <File FileName="AdformTrackingBindingIOS/ApiDefinition.cs" Line="276" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AdformTrackingBindingIOS" expanded="True">
+            <Node name="AdformTrackingBindingIOS" expanded="True">
+              <Node name="ApiDefinition.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/test/AppDelegate.cs" line="2" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
