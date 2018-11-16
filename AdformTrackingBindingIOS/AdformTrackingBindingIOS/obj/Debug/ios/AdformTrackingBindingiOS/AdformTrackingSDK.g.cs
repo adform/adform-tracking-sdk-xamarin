@@ -11,10 +11,10 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
-using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
+using CoreML;
 using MapKit;
 using Photos;
 using ModelIO;
@@ -46,12 +46,12 @@ namespace AdformTrackingBindingiOS {
 	[Register("AdformTrackingSDK", true)]
 	public unsafe partial class AdformTrackingSDK : NSObject {
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		static readonly IntPtr class_ptr = Class.GetHandle ("AdformTrackingSDK");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public AdformTrackingSDK () : base (NSObjectFlag.Empty)
@@ -64,14 +64,14 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected AdformTrackingSDK (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal AdformTrackingSDK (IntPtr handle) : base (handle)
 		{
@@ -79,7 +79,7 @@ namespace AdformTrackingBindingiOS {
 		}
 
 		[Export ("applicationOpenUrl:sourceApplication:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual bool ApplicationOpenUrl (NSUrl url, string sourceApplication)
 		{
 			if (url == null)
@@ -99,8 +99,30 @@ namespace AdformTrackingBindingiOS {
 			return ret;
 		}
 		
+		[Export ("customUserAgent")]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		public virtual string CustomUserAgent ()
+		{
+			if (IsDirectBinding) {
+				return NSString.FromHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSend (this.Handle, Selector.GetHandle ("customUserAgent")));
+			} else {
+				return NSString.FromHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("customUserAgent")));
+			}
+		}
+		
+		[Export ("GDPRConsent")]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		public virtual string GDPRConsent ()
+		{
+			if (IsDirectBinding) {
+				return NSString.FromHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSend (this.Handle, Selector.GetHandle ("GDPRConsent")));
+			} else {
+				return NSString.FromHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper (this.SuperHandle, Selector.GetHandle ("GDPRConsent")));
+			}
+		}
+		
 		[Export ("sendTrackPoint:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SendTrackPoint (AFTrackPoint trackPoint)
 		{
 			if (trackPoint == null)
@@ -113,7 +135,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("sendTrackPoints:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SendTrackPoints (AFTrackPoint[] trackPoints)
 		{
 			if (trackPoints == null)
@@ -130,7 +152,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("setAppName:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetAppName (string applicationName)
 		{
 			if (applicationName == null)
@@ -146,8 +168,25 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
+		[Export ("setCustomUserAgent:")]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		public virtual void SetCustomUserAgent (string customUserAgent)
+		{
+			if (customUserAgent == null)
+				throw new ArgumentNullException ("customUserAgent");
+			var nscustomUserAgent = NSString.CreateNative (customUserAgent);
+			
+			if (IsDirectBinding) {
+				global::ApiDefinition.Messaging.void_objc_msgSend_IntPtr (this.Handle, Selector.GetHandle ("setCustomUserAgent:"), nscustomUserAgent);
+			} else {
+				global::ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr (this.SuperHandle, Selector.GetHandle ("setCustomUserAgent:"), nscustomUserAgent);
+			}
+			NSString.ReleaseNative (nscustomUserAgent);
+			
+		}
+		
 		[Export ("setEnabled:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetEnabled (bool enabled)
 		{
 			if (IsDirectBinding) {
@@ -157,8 +196,25 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
+		[Export ("setGDPRConsent:")]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
+		public virtual void SetGDPRConsent (string consent)
+		{
+			if (consent == null)
+				throw new ArgumentNullException ("consent");
+			var nsconsent = NSString.CreateNative (consent);
+			
+			if (IsDirectBinding) {
+				global::ApiDefinition.Messaging.void_objc_msgSend_IntPtr (this.Handle, Selector.GetHandle ("setGDPRConsent:"), nsconsent);
+			} else {
+				global::ApiDefinition.Messaging.void_objc_msgSendSuper_IntPtr (this.SuperHandle, Selector.GetHandle ("setGDPRConsent:"), nsconsent);
+			}
+			NSString.ReleaseNative (nsconsent);
+			
+		}
+		
 		[Export ("setHTTPSEnabled:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetHTTPSEnabled (bool HTTPSEnabled)
 		{
 			if (IsDirectBinding) {
@@ -169,7 +225,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("setOrder:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetOrder (AFOrder order)
 		{
 			if (order == null)
@@ -182,7 +238,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("setSendSimCardStateEnabled:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetSendSimCardStateEnabled (bool enabled)
 		{
 			if (IsDirectBinding) {
@@ -193,7 +249,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("startTracking:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void StartTracking (nint trackingPointId)
 		{
 			if (IsDirectBinding) {
@@ -204,7 +260,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("startTrackingWithIds:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void StartTrackingWithIds (NSNumber[] trackingPointIds)
 		{
 			if (trackingPointIds == null)
@@ -220,7 +276,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual bool Enabled {
 			[Export ("isEnabled")]
 			get {
@@ -233,7 +289,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual bool HTTPSEnabled {
 			[Export ("isHTTPSEnabled")]
 			get {
@@ -246,7 +302,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual bool SendSimCardStateEnabled {
 			[Export ("isSendSimCardStateEnabled")]
 			get {
@@ -259,7 +315,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public static AdformTrackingSDK SharedInstance {
 			[Export ("sharedInstance")]
 			get {

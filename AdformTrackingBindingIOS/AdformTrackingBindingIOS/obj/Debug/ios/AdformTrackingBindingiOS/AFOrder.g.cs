@@ -11,10 +11,10 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
-using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
+using CoreML;
 using MapKit;
 using Photos;
 using ModelIO;
@@ -46,12 +46,12 @@ namespace AdformTrackingBindingiOS {
 	[Register("AFOrder", true)]
 	public unsafe partial class AFOrder : NSObject {
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		static readonly IntPtr class_ptr = Class.GetHandle ("AFOrder");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public AFOrder () : base (NSObjectFlag.Empty)
@@ -64,14 +64,14 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected AFOrder (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal AFOrder (IntPtr handle) : base (handle)
 		{
@@ -79,7 +79,7 @@ namespace AdformTrackingBindingiOS {
 		}
 
 		[Export ("setCustomVariable:forKey:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetCustomVariable (string variable, nint key)
 		{
 			if (variable == null)
@@ -96,7 +96,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("setNumericSystemVariable:forKey:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetNumericSystemVariable (NSNumber variable, nint key)
 		{
 			if (variable == null)
@@ -109,7 +109,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("setSystemVariable:forKey:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetSystemVariable (string variable, nint key)
 		{
 			if (variable == null)
@@ -125,7 +125,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Address1 {
 			[Export ("address1", ArgumentSemantic.Retain)]
 			get {
@@ -152,7 +152,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Address2 {
 			[Export ("address2", ArgumentSemantic.Retain)]
 			get {
@@ -179,7 +179,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string AgeGroup {
 			[Export ("ageGroup", ArgumentSemantic.Retain)]
 			get {
@@ -206,7 +206,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual nint BasketSize {
 			[Export ("basketSize")]
 			get {
@@ -227,7 +227,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Country {
 			[Export ("country", ArgumentSemantic.Retain)]
 			get {
@@ -254,7 +254,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Currency {
 			[Export ("currency", ArgumentSemantic.Retain)]
 			get {
@@ -281,7 +281,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual NSMutableDictionary<NSNumber, NSString> CustomVariables {
 			[Export ("customVariables", ArgumentSemantic.Retain)]
 			get {
@@ -306,7 +306,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Email {
 			[Export ("email", ArgumentSemantic.Retain)]
 			get {
@@ -333,7 +333,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string FirstName {
 			[Export ("firstName", ArgumentSemantic.Retain)]
 			get {
@@ -360,7 +360,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Gender {
 			[Export ("gender", ArgumentSemantic.Retain)]
 			get {
@@ -387,7 +387,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string LastName {
 			[Export ("lastName", ArgumentSemantic.Retain)]
 			get {
@@ -414,7 +414,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual NSMutableDictionary<NSNumber, NSNumber> NumericSystemVariables {
 			[Export ("numericSystemVariables", ArgumentSemantic.Retain)]
 			get {
@@ -439,7 +439,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string OrderId {
 			[Export ("orderId", ArgumentSemantic.Retain)]
 			get {
@@ -466,7 +466,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string OrderStatus {
 			[Export ("orderStatus", ArgumentSemantic.Retain)]
 			get {
@@ -493,7 +493,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Phone {
 			[Export ("phone", ArgumentSemantic.Retain)]
 			get {
@@ -520,7 +520,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual float Sale {
 			[Export ("sale")]
 			get {
@@ -541,7 +541,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual NSMutableDictionary<NSNumber, NSString> SystemVariables {
 			[Export ("systemVariables", ArgumentSemantic.Retain)]
 			get {
@@ -566,7 +566,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Zip {
 			[Export ("zip", ArgumentSemantic.Retain)]
 			get {

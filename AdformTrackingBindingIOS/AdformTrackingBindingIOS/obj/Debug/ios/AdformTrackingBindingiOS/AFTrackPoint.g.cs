@@ -11,10 +11,10 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
-using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
+using CoreML;
 using MapKit;
 using Photos;
 using ModelIO;
@@ -46,12 +46,12 @@ namespace AdformTrackingBindingiOS {
 	[Register("AFTrackPoint", true)]
 	public unsafe partial class AFTrackPoint : NSObject {
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		static readonly IntPtr class_ptr = Class.GetHandle ("AFTrackPoint");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public AFTrackPoint () : base (NSObjectFlag.Empty)
@@ -64,14 +64,14 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected AFTrackPoint (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal AFTrackPoint (IntPtr handle) : base (handle)
 		{
@@ -79,7 +79,7 @@ namespace AdformTrackingBindingiOS {
 		}
 
 		[Export ("initTrackPoint:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public AFTrackPoint (nint trackingPointId)
 			: base (NSObjectFlag.Empty)
 		{
@@ -92,7 +92,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("addProduct:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void AddProduct (AFProduct product)
 		{
 			if (product == null)
@@ -105,7 +105,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("setAppName:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetAppName (string applicationName)
 		{
 			if (applicationName == null)
@@ -122,7 +122,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("setSectionName:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual void SetSectionName (string sectionName)
 		{
 			if (sectionName == null)
@@ -138,7 +138,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string AppName {
 			[Export ("getAppName")]
 			get {
@@ -151,7 +151,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual AFOrder Order {
 			[Export ("order")]
 			get {
@@ -176,7 +176,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual AFProduct[] Products {
 			[Export ("products")]
 			get {
@@ -205,7 +205,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string SectionName {
 			[Export ("getSectionName")]
 			get {
@@ -218,7 +218,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual nint TrackPointId {
 			[Export ("getTrackPointId")]
 			get {

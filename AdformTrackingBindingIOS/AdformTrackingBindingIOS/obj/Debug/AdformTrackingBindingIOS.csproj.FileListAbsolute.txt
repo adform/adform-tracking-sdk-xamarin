@@ -1,6 +1,6 @@
 /Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/bin/Debug/AdformTrackingBindingIOS.dll
 /Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/bin/Debug/AdformTrackingBindingIOS.pdb
-/Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/obj/Debug/AdformTrackingBindingIOS.csprojResolveAssemblyReference.cache
 /Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/obj/Debug/AdformTrackingBindingIOS.csproj.CoreCompileInputs.cache
 /Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/obj/Debug/AdformTrackingBindingIOS.dll
 /Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/obj/Debug/AdformTrackingBindingIOS.pdb
+/Users/vladas/Projects/Adform/tracking-xamarin-sdk/AdformTrackingBindingIOS/obj/Debug/AdformTrackingBindingIOS.csprojAssemblyReference.cache

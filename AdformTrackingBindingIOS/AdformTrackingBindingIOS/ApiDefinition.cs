@@ -64,6 +64,22 @@ namespace AdformTrackingBindingiOS
         // -(void)setHTTPSEnabled:(BOOL)HTTPSEnabled;
         [Export("setHTTPSEnabled:")]
         void SetHTTPSEnabled(bool HTTPSEnabled);
+
+        // - (void)setGDPRConsent:(NSString *)consent;
+        [Export("setGDPRConsent:")]
+        void SetGDPRConsent(string consent);
+
+        // - (NSString *)GDPRConsent;
+        [Export("GDPRConsent")]
+        string GDPRConsent();
+
+        // - (void)setCustomUserAgent:(NSString *)customUserAgent;
+        [Export("setCustomUserAgent:")]
+        void SetCustomUserAgent(string customUserAgent);
+
+        // - (NSString *)customUserAgent;
+        [Export("customUserAgent")]
+        string CustomUserAgent();
     }
 
     // @interface AFTrackPoint : NSObject

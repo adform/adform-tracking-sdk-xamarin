@@ -11,10 +11,10 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
-using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
+using CoreML;
 using MapKit;
 using Photos;
 using ModelIO;
@@ -46,12 +46,12 @@ namespace AdformTrackingBindingiOS {
 	[Register("AFTrackPointsBuilder", true)]
 	public unsafe partial class AFTrackPointsBuilder : NSObject {
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		static readonly IntPtr class_ptr = Class.GetHandle ("AFTrackPointsBuilder");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public AFTrackPointsBuilder () : base (NSObjectFlag.Empty)
@@ -64,14 +64,14 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected AFTrackPointsBuilder (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal AFTrackPointsBuilder (IntPtr handle) : base (handle)
 		{
@@ -79,7 +79,7 @@ namespace AdformTrackingBindingiOS {
 		}
 
 		[Export ("initWithAppName:sectionName:products:order:trackPointIds:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public AFTrackPointsBuilder (string appName, string sectionName, AFProduct[] products, AFOrder order, NSNumber[] trackpointIds)
 			: base (NSObjectFlag.Empty)
 		{
@@ -112,7 +112,7 @@ namespace AdformTrackingBindingiOS {
 		}
 		
 		[Export ("build")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual AFTrackPoint[] Build ()
 		{
 			if (IsDirectBinding) {
@@ -122,7 +122,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string ApplicationName {
 			[Export ("applicationName", ArgumentSemantic.Retain)]
 			get {
@@ -149,7 +149,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual AFOrder Order {
 			[Export ("order", ArgumentSemantic.Retain)]
 			get {
@@ -174,7 +174,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual AFProduct[] Products {
 			[Export ("products", ArgumentSemantic.Retain)]
 			get {
@@ -203,7 +203,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string SectionName {
 			[Export ("sectionName", ArgumentSemantic.Retain)]
 			get {
@@ -230,7 +230,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual NSNumber[] TrackPointIds {
 			[Export ("trackPointIds", ArgumentSemantic.Retain)]
 			get {

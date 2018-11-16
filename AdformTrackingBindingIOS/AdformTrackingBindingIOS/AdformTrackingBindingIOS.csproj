@@ -42,14 +42,15 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="libAdformTracking.a">
-      <Kind>Static</Kind>
-      <ForceLoad>True</ForceLoad>
-      <Frameworks>SystemConfiguration AdSupport CoreData CoreTelephony</Frameworks>
-    </NativeReference>
     <NativeReference Include="libProtocolBuffers.a">
       <Kind>Static</Kind>
-      <ForceLoad>True</ForceLoad>
+      <SmartLink>False</SmartLink>
+      <Frameworks></Frameworks>
+    </NativeReference>
+    <NativeReference Include="AdformTracking.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <Frameworks>SystemConfiguration AdSupport CoreData CoreTelephony</Frameworks>
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />

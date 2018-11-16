@@ -11,10 +11,10 @@ using System.Diagnostics;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
-using System.Runtime.CompilerServices;
 using UIKit;
 using GLKit;
 using Metal;
+using CoreML;
 using MapKit;
 using Photos;
 using ModelIO;
@@ -46,12 +46,12 @@ namespace AdformTrackingBindingiOS {
 	[Register("AFProduct", true)]
 	public unsafe partial class AFProduct : NSObject {
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		static readonly IntPtr class_ptr = Class.GetHandle ("AFProduct");
 		
 		public override IntPtr ClassHandle { get { return class_ptr; } }
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		[Export ("init")]
 		public AFProduct () : base (NSObjectFlag.Empty)
@@ -64,14 +64,14 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected AFProduct (NSObjectFlag t) : base (t)
 		{
 			IsDirectBinding = GetType ().Assembly == global::ApiDefinition.Messaging.this_assembly;
 		}
 
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		[EditorBrowsable (EditorBrowsableState.Advanced)]
 		protected internal AFProduct (IntPtr handle) : base (handle)
 		{
@@ -79,7 +79,7 @@ namespace AdformTrackingBindingiOS {
 		}
 
 		[Export ("initWithCategoryName:categoryId:productName:productId:weight:step:productSales:productCount:custom:")]
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public AFProduct (string categoryName, string categoryId, string productName, string productId, nint weight, nint step, float productSales, nint productCount, string custom)
 			: base (NSObjectFlag.Empty)
 		{
@@ -113,7 +113,7 @@ namespace AdformTrackingBindingiOS {
 			
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string CategoryId {
 			[Export ("categoryId", ArgumentSemantic.Retain)]
 			get {
@@ -140,7 +140,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string CategoryName {
 			[Export ("categoryName", ArgumentSemantic.Retain)]
 			get {
@@ -167,7 +167,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string Custom {
 			[Export ("custom", ArgumentSemantic.Retain)]
 			get {
@@ -194,7 +194,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual nint ProductCount {
 			[Export ("productCount")]
 			get {
@@ -215,7 +215,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string ProductId {
 			[Export ("productId", ArgumentSemantic.Retain)]
 			get {
@@ -242,7 +242,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual string ProductName {
 			[Export ("productName", ArgumentSemantic.Retain)]
 			get {
@@ -269,7 +269,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual float ProductSales {
 			[Export ("productSales")]
 			get {
@@ -290,7 +290,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual AFEcomerceStep Step {
 			[Export ("step", ArgumentSemantic.UnsafeUnretained)]
 			get {
@@ -329,7 +329,7 @@ namespace AdformTrackingBindingiOS {
 			}
 		}
 		
-		[CompilerGenerated]
+		[BindingImpl (BindingImplOptions.GeneratedCode | BindingImplOptions.Optimizable)]
 		public virtual nint Weight {
 			[Export ("weight")]
 			get {
