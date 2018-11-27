@@ -11,5 +11,7 @@
    <remove-node path="/api/package[@name='com.adform.adformtrackingsdk.controller']/class[@name='SendDependencyController']" />
 
    <attr path="/api/package[@name='com.adform.adformtrackingsdk.general']/class[@name='AbstractHandler']/method[@name='setEnabled' and count(parameter)=1]" name="propertyName"></attr>
-
+   
+   <attr path="/api/package[@name='com.adform.adformtrackingsdk']/class[@name='MainHandler']/method[@name='onFacebookAttributionIdTrackingChange']"  name="visibility">protected</attr>
+    
 </metadata>
