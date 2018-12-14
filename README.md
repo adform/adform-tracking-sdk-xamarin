@@ -11,3 +11,5 @@ To integration Adform Tracking SDK to Xamarin iOS projects, please read
 
 To integration Adform Tracking SDK to Xamarin Android projects, please read 
 [Xamarin Android integration guide](https://github.com/adform/adform-tracking-sdk-xamarin/wiki/xamarin-android-integration-guide).
+
+***If you have any issues or suggestions please contact mobile-sdk@adform.com***
